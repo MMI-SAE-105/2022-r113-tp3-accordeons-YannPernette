@@ -13,15 +13,15 @@
     <div class="accordeon">
       <section id="Premier" x-data="{menuIsOpen : true}">
         <button aria-controls="Premier" @click="menuIsOpen =! menuIsOpen">bouton 1</button>
-        <p id="Premier" x-show="menuIsOpen">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam earum, quae voluptas sunt sequi libero error iure accusamus, magnam debitis dolorem nobis cupiditate eligendi fugiat, facere laborum veniam harum!</p>
+        <p id="Premier" x-show="menuIsOpen" x-transition.duration.500ms>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam earum, quae voluptas sunt sequi libero error iure accusamus, magnam debitis dolorem nobis cupiditate eligendi fugiat, facere laborum veniam harum!</p>
       </section>
       <section id="Deuxième" x-data="{menuIsOpen : false}">
         <button aria-controls="Deuxième" @click="menuIsOpen =! menuIsOpen">bouton 2</button>
-        <p id="Deuxième" x-show="menuIsOpen">Commodi iste sapiente atque quod id perspiciatis, dolore officia nemo excepturi, ratione suscipit quasi nulla nobis odit! Iure perferendis, repudiandae laboriosam commodi distinctio, vel repellendus, asperiores eos eum neque dolorem.</p>
+        <p id="Deuxième" x-show="menuIsOpen" x-transition.duration.500ms>Commodi iste sapiente atque quod id perspiciatis, dolore officia nemo excepturi, ratione suscipit quasi nulla nobis odit! Iure perferendis, repudiandae laboriosam commodi distinctio, vel repellendus, asperiores eos eum neque dolorem.</p>
       </section>
       <section id="Troisième" x-data="{menuIsOpen : false}">
         <button aria-controls="Troisième" @click="menuIsOpen =! menuIsOpen">bouton 3</button>
-        <p id="Troisième" x-show="menuIsOpen">Quasi fuga repellendus odit eius illum, perspiciatis autem reprehenderit quaerat. Harum quos mollitia iusto odio laboriosam molestias, quam vel voluptates quibusdam explicabo deleniti, modi nisi fuga est facere, dicta blanditiis.</p>
+        <p id="Troisième" x-show="menuIsOpen" x-transition.duration.500ms>Quasi fuga repellendus odit eius illum, perspiciatis autem reprehenderit quaerat. Harum quos mollitia iusto odio laboriosam molestias, quam vel voluptates quibusdam explicabo deleniti, modi nisi fuga est facere, dicta blanditiis.</p>
       </section>
     </div>
   </body>
