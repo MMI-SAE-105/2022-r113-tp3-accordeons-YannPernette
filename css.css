@@ -5,7 +5,7 @@
 }
 
 #accordeon li {
-    /* largeur de chaque élément replié 107px */
+    width: 107px;
     overflow: hidden;
     /* pour l'animation, transition sur width */
     background-color: #eee;

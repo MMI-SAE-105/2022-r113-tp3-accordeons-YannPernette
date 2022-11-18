@@ -13,7 +13,7 @@
     <h1>Accordéon horizontal</h1>
 
     <ul id="accordeon">
-      <li>
+      <li @click="menuIsOpen = 1" :class="{'actif' : menuIsOpen == 1}">
         <figure>
           <img src="public/axolotl_1.jpg" alt="Axolotl 1" width="102">
           <figcaption>
@@ -22,7 +22,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li @click="menuIsOpen = 2" :class="{'actif' : menuIsOpen == 2}">
         <figure>
           <img src="public/axolotl_2.jpg" alt="Axolotl 2" width="102">
           <figcaption>
@@ -31,7 +31,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li @click="menuIsOpen = 3" :class="{'actif' : menuIsOpen == 3}">
         <figure>
           <img src="public/axolotl_3.jpg" alt="Axolotl 3" width="102">
           <figcaption>
