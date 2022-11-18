@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen : 1}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="css.css">
   </head>
 
   <body>
     <h1>Onglets</h1>
 
     <nav>
-      <a href="#chien">Chien</a>
-      <a href="#chat">Chat</a>
-      <a href="#axolotl">Axolotl</a>
-      <a href="#default">clear</a>
+      <ul id="onglets">
+        <li @click="menuIsOpen = 1" :class="{'visible' : menuIsOpen == 1}">Chien</li>
+        <li @click="menuIsOpen = 2" :class="{'visible' : menuIsOpen == 2}">Chat</li>
+        <li @click="menuIsOpen = 3" :class="{'visible' : menuIsOpen == 3}">Axolotl</li>
+        <li @click="menuIsOpen = 4" :class="{'visible' : menuIsOpen == 4}">clear</li>
+      </ul>
     </nav>
-    
-    <div class="items">
-      <p id="item1">Petit mammifère familier à poil doux, aux yeux oblongs et brillants, à oreilles triangulaires, aux griffes rétractiles.</p>
-      <p id="item2">Mammifère domestique dont de nombreuses races sont élevées.</p>
-      <p id="item3">Larve d'un reptile (salamandre) du Mexique, capable de se reproduire.</p>
-      <p id="default"></p>
-    </div>
 
   </body>
 
