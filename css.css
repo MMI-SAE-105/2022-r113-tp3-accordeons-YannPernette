@@ -1,18 +1,19 @@
 #accordeon {
-    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 #accordeon li {
     width: 107px;
+    height: 90px;
     overflow: hidden;
-    /* pour l'animation, transition sur width */
+    transition: width 0.5s;
     background-color: #eee;
     list-style-type: none;
     margin: 3px;
     padding: 5px;
     border-radius: 5px;
+    display:inline-block;
 }
 
 #accordeon li.actif {
@@ -20,16 +21,17 @@
 }
 
 #accordeon li figure {
-    margin: 0;
-    /* pour que les éléments soient alignés horizontalement */
-    /* largeur de l'élément intrérieur de 317px (= déplié) */
+    margin: 0px;
+    width: 317px;
+    display:inline-block;
 }
 
 #accordeon li figure figcaption {
-    /* largeur du texte de 200px */
+    width: 200px;
     padding: 10px;
-    /* pour que les éléments soient alignés verticalement */
-    /* espace entre les éléments */
+    text-align: center;
+    padding: 5px;
+    display:inline-block;
 }
 
 /* Sur tous les enfants de figcaption */
