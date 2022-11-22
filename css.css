@@ -42,7 +42,12 @@
 
 
 
+
+
+
 #onglets li {
+    display: inline-block;
+    padding: 5px;
     border-style: solid;
     border-radius: 5px;
     overflow: hidden;
@@ -50,4 +55,10 @@
 
 #onglets li.visible {
     background-color: red;
+    color: white;
+    border-color: black;
+}
+
+#onglets li:hover {
+    border-color: red;
 }
