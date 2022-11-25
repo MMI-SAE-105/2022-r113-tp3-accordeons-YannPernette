@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen : 1}">
+<html lang="fr" x-data="{ouvert: 1}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,14 +12,28 @@
   <body>
     <h1>Onglets</h1>
 
-    <nav>
-      <ul id="onglets">
-        <li @click="menuIsOpen = 1" :class="{'visible' : menuIsOpen == 1}">Chien</li>
-        <li @click="menuIsOpen = 2" :class="{'visible' : menuIsOpen == 2}">Chat</li>
-        <li @click="menuIsOpen = 3" :class="{'visible' : menuIsOpen == 3}">Axolotl</li>
-        <li @click="menuIsOpen = 4" :class="{'visible' : menuIsOpen == 4}">clear</li>
+    <div id="onglets">
+      <ul role="tablist">
+        <li @click="ouvert = 1" :class="{'visible' : ouvert === 1}" role="tab">Onglet 1</li>
+        <li @click="ouvert = 2" :class="{'visible' : ouvert === 2}" role="tab">Onglet 2</li>
+        <li @click="ouvert = 3" :class="{'visible' : ouvert === 3}" role="tab">Onglet 3</li>
       </ul>
-    </nav>
+    </div>
+
+    <div id="panneaux">
+      <div class="tab" role="tabpanel" x-show="ouvert === 1">
+        <h1>Panneau 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aliquid labore cumque! Ratione quasi voluptatum architecto perferendis, cumque sed blanditiis animi quos. Aliquam exercitationem placeat optio consequuntur veniam. Obcaecati, quis!</p>
+      </div>
+      <div class="tab" role="tabpanel" x-show="ouvert === 2">
+        <h1>Panneau 2</h1>
+        <p>At, rerum. Consequatur ut distinctio quam, maxime magnam cum ipsam accusantium quos reprehenderit modi corrupti porro sint, sunt voluptatem facilis quod repudiandae eos ullam, quia unde labore non delectus. Harum.</p>
+      </div>
+      <div class="tab" role="tabpanel" x-show="ouvert === 3">
+        <h1>Panneau 3</h1>
+        <p>Quos exercitationem aut nemo, repellendus porro molestiae alias hic quas accusamus, dolores accusantium ullam aliquam at excepturi. Exercitationem, distinctio, illo quaerat quisquam at nesciunt neque libero hic facilis nam non!</p>
+      </div>
+    </div>
 
   </body>
 
